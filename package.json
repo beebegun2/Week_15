@@ -1,0 +1,30 @@
+{
+  "name": "coding-assignment",
+  "version": "1.0.0",
+  "description": "\"# Week_15\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beebegun2/Week_15.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beebegun2/Week_15/issues"
+  },
+  "homepage": "https://github.com/beebegun2/Week_15#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.6.1"
+  }
+}
