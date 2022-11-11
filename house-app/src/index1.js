@@ -74,7 +74,7 @@ class DOMManager {
 
     static addRoom(id) {
     for (let house of this.houses) {
-        if (house._id == id) {
+        if (house._id === id) {
             house.rooms.push(new Room($(`#${house._id}-room-name`).val(), $(`#${house._id}-room-area`).val()));
             HouseService.updateHouse(house) 
                 .then(() => {
@@ -87,9 +87,9 @@ class DOMManager {
 
     static deleteRoom(houseId, roomId) {
         for (let house of this.houses) {
-            if (house._id == houseId) {
+            if (house._id === houseId) {
                 for (let room of house.rooms) {
-                    if (room._id == roomId) {
+                    if (room._id === roomId) {
                         house.rooms.splice(house.rooms.indexOf(room), 1);
                         HouseService.updateHouse(house)
                         .then(() => {
@@ -144,7 +144,7 @@ class DOMManager {
 
 }
 
-$('#create-new-house').click(() => {
+$('#create-new-house').trigger(() => {
     DOMManager.createHouse($('#new-house-name').val());
     $('#new-house-name').val('');
 });
